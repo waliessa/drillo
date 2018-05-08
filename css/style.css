@@ -3,9 +3,10 @@
     font-size: 20px;
     text-align: center;
     margin-top: 150px;
-    text-decoration: uppercase;
+    text-transform: uppercase;
 }
 p {
     padding: 40px !important;
     font-family:'Lato', sans-serif;
+    font-family: 16px;
 }
