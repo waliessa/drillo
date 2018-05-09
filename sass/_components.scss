@@ -147,7 +147,8 @@
         transform: scaleY(0);
         transform-origin: center;
         transition: transform .2s, 
-                            width .4s cubic-bezier(1, 0, 0, 1) .2s;
+                            width .4s cubic-bezier(1, 0, 0, 1) .2s,
+                            background-color .1s;
     }
 
 
@@ -155,6 +156,10 @@
     &__item--active::before {
         transform: scaleY(1);
         width: 100%;
+    }
+
+    &__item:active::before {
+        background-color: var( --color-primary-dark);
     }
     &__link:link,
     &__link:visited {
