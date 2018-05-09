@@ -209,7 +209,7 @@
 .overview {
 
     display: flex;
-    border-bottom:1px solid var(--color-Grey-light-2);
+    border-bottom:var(--line);
     align-items: center;
 
     &__heading {
@@ -239,19 +239,34 @@
    }
 
    &__icon-location {
-        margin-right: .5rem;
+        margin-right: .5rem; 
    }
 
    &__rating {
+        background-color: var(--color-primary);
+        margin-left: 3rem;
+        color:#fff;
+        padding: 0 2.25rem;
+        align-self: stretch;
 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
    }
 
    &__rating-average {
 
+    font-size: 2.25rem;
+    font-weight:300;
+    margin-bottom: -3px;
+
+
    }
 
    &__rating-count {
-    
+        font-size: 0.8rem;
+        text-transform: uppercase;
     }
 
 }
@@ -299,3 +314,31 @@
         box-shadow: none;
     }
 }
+
+////////////////////////////
+// PARAGRAPH
+
+.paragraph:not(:last-of-type) {
+    margin-bottom: 2rem;
+}
+
+////////////////////////////
+// list
+
+.list {
+    list-style: none;
+    margin: 3rem 0;
+    padding: 3rem;
+    border-top:var(--line);
+    border-bottom:var(--line);
+
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+        flex: 0 0 50%;
+    }
+}
+
+////////////////////////////
+// recommend
