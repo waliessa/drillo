@@ -70,3 +70,10 @@ body {
   background-color: #fff;
   flex: 1;
   background-color: orangered; }
+
+.logo {
+  height: 3.25rem; }
+
+.search__icon {
+  height: 2rem;
+  width: 2rem; }
