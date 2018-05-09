@@ -123,19 +123,23 @@
 // side navigation
 
 .side-nav {
-
+    font-size: 1.4rem;
+    list-style: none;
+    margin-top: 3.5rem;
     &__nav-item {
 
     }
 
-    &__link {
-
+    &
+    &__link:link,
+    &__link:visited {
+        
     }
 
     &__icon {
         width:1.75rem;
         height: 1.75rem;
-        
+
     }
 }
 
