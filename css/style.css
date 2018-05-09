@@ -77,3 +77,11 @@ body {
 .search__icon {
   height: 2rem !important;
   width: 2rem !important; }
+
+.user-nav__icon {
+  height: 2.25rem;
+  width: 2.25rem; }
+
+.user-nav__user-photo {
+  height: 3.25rem;
+  border-radius: 50%; }
