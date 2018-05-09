@@ -161,7 +161,7 @@ body {
   list-style: none;
   margin-top: 3.5rem; }
   .side-nav .side-nav__link:link, .side-nav__link:visited {
-    color: var(--color-grey-light-1);
+    color: #fff;
     display: block;
     text-decoration: none;
     text-transform: uppercase;
