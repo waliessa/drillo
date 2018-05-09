@@ -57,7 +57,7 @@ body {
 .header {
   height: 7rem;
   background-color: #fff;
-  border-bottom: var(--color-grey-light-2);
+  border-bottom: 1px solid var(--color-Grey-light-2);
   font-size: 1.4rem;
   display: flex;
   justify-content: space-between;
@@ -208,9 +208,16 @@ body {
     display: block; }
 
 .overview {
-  display: flex; }
+  display: flex;
+  border-bottom: 1px solid var(--color-Grey-light-2);
+  align-items: center; }
+  .overview__heading {
+    font-size: 2.25rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1.5rem 3rem; }
   .overview__star {
-    background-color: orangered;
     margin-right: auto; }
   .overview__icon-star, .overview__icon-location {
     width: 1.75rem;
