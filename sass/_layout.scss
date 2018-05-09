@@ -12,13 +12,17 @@
 }
 
 .content {
-
+    display: flex;
 }
 
 .sidebar {
     background-color: var(--color-Grey-dark-1);
+
+    flex:0 0 18%;
 }
 
 .hotel-view {
     background-color: #fff;
+    flex: 1;
+    background-color: orangered;
 }
