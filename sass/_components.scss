@@ -146,12 +146,14 @@
         background-color: var(--color-primary);
         transform: scaleY(0);
         transform-origin: center;
-        transition: transform 1s;
+        transition: transform .2s, 
+                            width .4s cubic-bezier(1, 0, 0, 1) .2s;
     }
 
 
     &__item:hover::before{
         transform: scaleY(1);
+        width: 100%;
     }
     &__link:link,
     &__link:visited {
@@ -160,7 +162,8 @@
         text-decoration: none;
         text-transform: uppercase;
         padding: 1.5rem 3rem;
-
+        z-index: 100;
+        position: relative;
         display: flex;
         align-items: center;
     }

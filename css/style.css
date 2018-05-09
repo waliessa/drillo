@@ -174,15 +174,18 @@ body {
     background-color: var(--color-primary);
     transform: scaleY(0);
     transform-origin: center;
-    transition: transform 1s; }
+    transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s; }
   .side-nav__item:hover::before {
-    transform: scaleY(1); }
+    transform: scaleY(1);
+    width: 100%; }
   .side-nav__link:link, .side-nav__link:visited {
     color: #fff;
     display: block;
     text-decoration: none;
     text-transform: uppercase;
     padding: 1.5rem 3rem;
+    z-index: 100;
+    position: relative;
     display: flex;
     align-items: center; }
   .side-nav__icon {
