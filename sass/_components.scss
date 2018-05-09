@@ -221,6 +221,7 @@
     }
     &__star {
         margin-right: auto;
+        display: flex;
     }
 
     &__icon-star,
@@ -232,8 +233,15 @@
    }
 
    &__location {
-      
+      font-size: 1.2rem;
+      display: flex;
+      vertical-align: center;
    }
+
+   &__icon-location {
+        margin-right: .5rem;
+   }
+
    &__rating {
 
    }
@@ -244,6 +252,50 @@
 
    &__rating-count {
     
+    }
+
 }
 
+// button inline
+
+.btn-inline {
+    border: none;
+    color:var(--color-primary);
+    font-size: inherit;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 2px;
+    display: inline-block;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all .2s;
+
+    &:hover {
+        color:var(--color-grey-dark-1);
+        animation: pulsate 1s infinite;
+    }
+
+    &:focus {
+        outline: none;
+        
+
+    }
+}
+
+// keyframes
+
+@keyframes pulsate {
+    0% {
+        transform: scale(1);
+        box-shadow: none;
+    }
+
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 2rem 4rem rgba(0,0,0,.3);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: none;
+    }
 }
