@@ -125,7 +125,7 @@
 }
 
 
-
+// ////////////////////////////////////////////
 // side navigation
 
 .side-nav {
@@ -143,15 +143,16 @@
 
         &:not(:last-child) {
             margin-bottom: .5rem;
-
-            @media only screen and (max-width: $bp-medium) {
+        
+        @media only screen and (max-width: $bp-medium) {
                 margin: 0;
             }
+        
         }
         @media only screen and (max-width: $bp-medium) {
             flex: 1;
+        }
     }
-
     &__item::before {
 
         content: "";
@@ -213,9 +214,10 @@
             margin-bottom: .7rem;
             width: 1.5rem;
             height: 1.5rem;
+            }
+    
         }
     }
-}
 //=======================================
 //========================= legal
 .legal {
@@ -431,7 +433,7 @@
         border:3px solid #fff;
 
         &:not(:last-child) {
-            margin-right: -1.5rem;
+            margin-right: -2rem;
         }
     }
 }
@@ -574,4 +576,4 @@
         animation: pulsate 1s infinite;
         
     }
-}
+ }
